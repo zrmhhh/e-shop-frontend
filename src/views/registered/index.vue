@@ -1,11 +1,11 @@
 <template>
   <div class="content">
-    <p class="please">请登录</p>
+    <p class="please">请注册</p>
 
-    <input class="name" type="text" placeholder="请输入账号" />
-    <input class="password" type="text" placeholder="请输入密码" />
-    <a @click="$router.push('/registered')">点击注册</a>
-    <button class="login">登录</button>
+    <input class="name" type="text" placeholder="请输入用户名" />
+    <input class="password" type="text" placeholder="请输入账号密码" />
+    <input class="password" type="text" placeholder="请输入手机号" />
+    <button class="login" @click="$router.push('/user')">注册</button>
   </div>
 </template>
 
@@ -13,7 +13,7 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "LoginView",
+  name: "RegisteredView",
   components: {},
 });
 </script>
@@ -40,7 +40,7 @@ export default defineComponent({
     box-sizing: border-box;
     color: #818691;
     font-size: 0.26rem;
-    outline:0;
+    outline: 0;
   }
   .password {
     width: 6.5rem;
@@ -51,9 +51,10 @@ export default defineComponent({
     box-sizing: border-box;
     color: #818691;
     font-size: 0.26rem;
-     outline:0;
+    margin-bottom: 0.3rem;
+    outline: 0;
   }
-  a{
+  a {
     display: inline-block;
     text-decoration: none;
     margin-top: 0.2rem;
@@ -61,13 +62,14 @@ export default defineComponent({
   .login {
     width: 6.5rem;
     height: 0.9rem;
-    background-color: #3a70ec;
+    background-color: #54ad4a;
     border: 0rem;
     box-shadow: 0px 6px 10px rgba(58, 112, 236, 0.3);
     border-radius: 12px;
     margin-top: 1.8rem;
     color: #ffffff;
     font-size: 0.26rem;
+    outline: 0;
   }
 }
 </style>
