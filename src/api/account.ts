@@ -7,3 +7,11 @@ export function AccountLogin (data: any) {
         data
     });
 }
+
+export function AccountRegister (data: any) {
+    return request({
+        url: '/user/register',
+        method: 'post',
+        data
+    });
+}

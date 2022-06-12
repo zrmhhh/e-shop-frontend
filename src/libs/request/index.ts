@@ -17,6 +17,7 @@ function errorCreate(msg: any) {
 
 // 记录和显示错误
 function errorLog(err: any) {
+    alert(err.message)
     // 添加到日志
     // store.dispatch('admin/log/push', {
     //     message: '数据请求异常',
@@ -83,7 +84,7 @@ service.interceptors.response.use(
         } else {
             // 有 code 代表这是一个后端接口 可以进行进一步的判断
             switch (code) {
-                case 0:
+                case 200:
                     // [ 示例 ] code === 0 代表没有错误
                     return dataAxios.data;
                 case 'xxx':

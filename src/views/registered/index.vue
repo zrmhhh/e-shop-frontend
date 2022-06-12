@@ -2,19 +2,57 @@
   <div class="content">
     <p class="please">请注册</p>
 
-    <input class="name" type="text" placeholder="请输入用户名" />
-    <input class="password" type="text" placeholder="请输入账号密码" />
-    <input class="password" type="text" placeholder="请输入手机号" />
-    <button class="login" @click="$router.push('/user')">注册</button>
+    <input v-model="name" class="name" type="text" placeholder="请输入用户名" />
+    <input
+      v-model="password"
+      class="password"
+      type="text"
+      placeholder="请输入密码"
+    />
+    <input
+      v-model="repassword"
+      class="password"
+      type="text"
+      placeholder="请确认密码"
+    />
+    <input
+      v-model="mobile"
+      class="password"
+      type="text"
+      placeholder="请输入手机号"
+    />
+    <button class="login" @click="onRegister">注册</button>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import { AccountRegister } from "@/api/account";
 
 export default defineComponent({
   name: "RegisteredView",
   components: {},
+  data() {
+    return {
+      name: "",
+      password: "",
+      repassword: "",
+      mobile: "",
+    };
+  },
+  methods: {
+    onRegister() {
+      AccountRegister({
+        accountName: this.name,
+        password: this.password,
+        repassword: this.repassword,
+        mobile: this.mobile,
+        role: 0,
+      }).then((res) => {
+        this.$router.push("/user");
+      });
+    },
+  },
 });
 </script>
 
