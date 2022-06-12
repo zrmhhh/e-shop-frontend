@@ -14,14 +14,22 @@ const routes: Array<RouteRecordRaw> = [
     name: 'cart',
     component: () => import(/* webpackChunkName: "cart" */ '../views/cart/index.vue')
   }, {
+    path: '/newcart',
+    name: 'newcart',
+    component: () => import(/* webpackChunkName: "newcart" */ '../views/newcart/index.vue')
+  },{
     path: '/user',
     name: 'user',
     component: () => import(/* webpackChunkName: "user" */ '../views/user/index.vue')
-  }, {
+  },   {
+    path: '/newuser',
+    name: 'newuser',
+    component: () => import(/* webpackChunkName: "newuser" */ '../views/newuser/index.vue')
+  },{
     path: '/goods',
     name: 'goods',
     component: () => import(/* webpackChunkName: "goods" */ '../views/goods/index.vue')
-  }, {
+  },{
     path: '/order',
     name: 'order',
     component: () => import(/* webpackChunkName: "order" */ '../views/order/index.vue')
