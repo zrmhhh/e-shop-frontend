@@ -4,7 +4,7 @@ module.exports = defineConfig({
   devServer: {
     proxy: {
         '/dev-api/': {
-            target: 'http://192.168.50.124:3000', // 本地开发环境
+            target: 'http://124.4.102.264:3000', // 本地开发环境
             pathRewrite: {
                 '^/dev-api': ''
             }
