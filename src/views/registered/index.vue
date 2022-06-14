@@ -49,7 +49,7 @@ export default defineComponent({
         mobile: this.mobile,
         role: 0,
       }).then((res) => {
-        this.$router.push("/user");
+        this.$router.push("/login");
       });
     },
   },

@@ -38,22 +38,26 @@ const routes: Array<RouteRecordRaw> = [
     name: 'coupon',
     component: () => import(/* webpackChunkName: "coupon" */ '../views/coupon/index.vue')
   }, {
-    path: '/couponnotuser',
-    name: 'couponnotuser',
-    component: () => import(/* webpackChunkName: "couponnotuser" */ '../views/couponnotuser/index.vue')
-  },{
-    path: '/couponoverdue',
-    name: 'couponoverdue',
-    component: () => import(/* webpackChunkName: "couponoverdue" */ '../views/couponoverdue/index.vue')
-  },{
-    path: '/order',
-    name: 'order',
-    component: () => import(/* webpackChunkName: "order" */ '../views/order/index.vue')
+    path: '/coupon/get',
+    name: 'couponGet',
+    component: () => import(/* webpackChunkName: "get" */ '../views/coupon/get.vue')
   },{
     path: '/neworder',
     name: 'neworder',
     component: () => import(/* webpackChunkName: "neworder" */ '../views/neworder/index.vue')
   }, {
+    path: '/orderdetails',
+    name: 'orderdetails',
+    component: () => import(/* webpackChunkName: "orderdetails" */ '../views/orderdetails/index.vue')
+  },{
+    path: '/submitorder',
+    name: 'submitorder',
+    component: () => import(/* webpackChunkName: "submitorder" */ '../views/submitorder/index.vue')
+  },{
+    path: '/resubmitorder',
+    name: 'resubmitorder',
+    component: () => import(/* webpackChunkName: "resubmitorder" */ '../views/resubmitorder/index.vue')
+  },{
     path: '/payment',
     name: 'payment',
     component: () => import(/* webpackChunkName: "payment" */ '../views/payment/index.vue')

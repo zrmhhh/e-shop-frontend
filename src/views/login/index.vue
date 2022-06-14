@@ -2,19 +2,41 @@
   <div class="content">
     <p class="please">请登录</p>
 
-    <input class="name" type="text" placeholder="请输入账号" />
-    <input class="password" type="text" placeholder="请输入密码" />
+    <input v-model="name" class="name" type="text" placeholder="请输入账号" />
+    <input
+      v-model="password"
+      class="password"
+      type="text"
+      placeholder="请输入密码"
+    />
     <a @click="$router.push('/registered')">点击注册</a>
-    <button class="login">登录</button>
+    <button class="login" @click="onLogin">登录</button>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import { AccountLogin } from "@/api/account";
 
 export default defineComponent({
   name: "LoginView",
   components: {},
+  data() {
+    return {
+      name: "",
+      password: "",
+    };
+  },
+  methods: {
+    onLogin() {
+      AccountLogin({
+        username: this.name,
+        password: this.password,
+      }).then((res) => {
+        this.$router.push("/user");
+      });
+    },
+  },
 });
 </script>
 
@@ -40,7 +62,7 @@ export default defineComponent({
     box-sizing: border-box;
     color: #818691;
     font-size: 0.26rem;
-    outline:0;
+    outline: 0;
   }
   .password {
     width: 6.5rem;
@@ -51,12 +73,14 @@ export default defineComponent({
     box-sizing: border-box;
     color: #818691;
     font-size: 0.26rem;
-     outline:0;
+    outline: 0;
   }
-  a{
+  a {
     display: inline-block;
     text-decoration: none;
     margin-top: 0.2rem;
+    color: #818691;
+    font-size: 0.24rem;
   }
   .login {
     width: 6.5rem;

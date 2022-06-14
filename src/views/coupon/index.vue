@@ -14,6 +14,10 @@
     <ul class="coupon" v-if="couponType === 1">
       <couponItem v-for="(item, key) in couponNotUseList" :key="key" />
     </ul>
+
+    <ul class="coupon" v-if="couponType === 2">
+      <couponItemUsed v-for="(item ,key) in couponUsedList" :key="key" />
+    </ul>
     <ul class="coupon" v-if="couponType === 3">
       <couponItemExpire v-for="(item, key) in couponExpireList" :key="key" />
     </ul>
@@ -23,18 +27,21 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import couponItem from "./components/coupon-item.vue";
-import couponItemExpire from "./components/coupon-item-expire.vue"
+import couponItemUsed from "./components/coupon-item-used.vue";
+import couponItemExpire from "./components/coupon-item-expire.vue";
 
 export default defineComponent({
   name: "CouponView",
   components: {
     couponItem,
-    couponItemExpire
+    couponItemUsed,
+    couponItemExpire,
   },
   data() {
     return {
       couponType: 1,
       couponNotUseList: [{}, {}, {}, {}, {}],
+      couponUsedList: [{}, {}, {}, {}],
       couponExpireList: [{}, {}, {}],
     };
   },
@@ -66,7 +73,6 @@ export default defineComponent({
     &.active {
       color: #157648;
       font-weight: bold;
-    //   border-bottom: 2px solid #157648;
     }
   }
 }
