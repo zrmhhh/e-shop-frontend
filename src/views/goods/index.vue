@@ -1,7 +1,9 @@
 <template>
   <div>
     <p class="carousel">
-      <img src="http://121.4.102.246:7001/e-shop/goods/goods-04.jpg" alt="" />
+      <!-- <img src="http://121.4.102.246:7001/e-shop/goods/goods-04.jpg" alt="" /> -->
+      <!-- http://resource.123123.store:8881/e-shop/goods/goods-04.jpg -->
+      <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F015ad2562deddf32f8755701ba7d61.jpg%401280w_1l_2o_100sh.jpg&refer=http%3A%2F%2Fimg.zcool.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1657812278&t=c9a979caa1c4706927bec64b677ce55a" alt="">
     </p>
     <div class="info">
       <div class="info-inner">
@@ -34,16 +36,28 @@
     <div class="ctrl">
       <div class="ctrl-left"></div>
       <div class="ctrl-right">
-        <p class="ctrl-right__cart">加入购物车</p>
-        <p class="ctrl-right__buy">立即购买</p>
+        <p class="ctrl-right__cart" @click="isShowCard = true">加入购物车</p>
+        <p class="ctrl-right__buy" @click="isShowCard = true">立即购买</p>
       </div>
     </div>
+
+    <!-- 弹窗 -->
+    <GoodsCard v-if="isShowCard" @onHideCard="isShowCard = false" />
   </div>
 </template>
 
 <script>
+import GoodsCard from './components/card.vue'
 export default {
-    name: 'GoodsDetail'
+    name: 'GoodsDetail',
+    components: {
+      GoodsCard
+    },
+    data(){
+      return {
+        isShowCard: false
+      }
+    }
 }
 </script>
 
