@@ -1,13 +1,20 @@
 <template>
   <div class="OrderDetails">
     <div class="location">
-      <div class="location-name">
-        <img src="@/assets/location.png" alt="" />
-        <span>周果果 15000822612</span>
+      <!-- <div class="location-line">
+        <img src="@/assets/line2.png" alt="" />
+      </div> -->
+      <div class="location-detail">
+        <div class="location-detail_text">
+          <div class="location-detail_text--name">
+            <img src="@/assets/location.png" alt="" />
+            <span>周果果 15000822612</span>
+          </div>
+          <p class="location-detail_text--adress">
+            上海市 浦东新区 桃浦镇山东路168号高新小区3幢702室
+          </p>
+        </div>
       </div>
-      <p class="location-adress">
-        上海市 浦东新区 桃浦镇山东路168号高新小区3幢702室
-      </p>
     </div>
     <div class="information">
       <div class="information-left">
@@ -140,23 +147,38 @@ export default defineComponent({
 .location {
   width: 100%;
   height: 1.56rem;
-  background-color: #f5f5f5;
-  padding: 0rem 0.3rem;
-  &-name {
-    position: relative;
-    font-size: 0.28rem;
-    color: #333;
-    margin-bottom: 0.15rem;
+  background-color: #FFFFFF;
+  position: relative;
+  margin-bottom: 0.2rem;
+  &-line {
+    width: 100%;
     img {
-      height: 0.28rem;
       position: absolute;
-      left: -0.4rem;
-      top: 2px;
+      bottom: 0rem;
     }
   }
-  &-adress {
-    font-size: 0.24rem;
-    color: #666;
+  &-detail {
+    padding: 0rem 0.3rem;
+    &_text {
+      margin-left: 0.44rem;
+      padding-top: 0.44rem;
+      &--name {
+        position: relative;
+        font-size: 0.28rem;
+        color: #333;
+        margin-bottom: 0.15rem;
+        img {
+          height: 0.28rem;
+          position: absolute;
+          left: -0.4rem;
+          top: 2px;
+        }
+      }
+      &--adress {
+        font-size: 0.24rem;
+        color: #666;
+      }
+    }
   }
 }
 
