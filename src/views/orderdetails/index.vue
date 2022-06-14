@@ -1,10 +1,10 @@
 <template>
   <div class="OrderDetails">
     <div class="location">
-      <p class="location-name">
-        周果果
-        <span>15000822612</span>
-      </p>
+      <div class="location-name">
+        <img src="@/assets/location.png" alt="" />
+        <span>周果果 15000822612</span>
+      </div>
       <p class="location-adress">
         上海市 浦东新区 桃浦镇山东路168号高新小区3幢702室
       </p>
@@ -138,23 +138,28 @@ export default defineComponent({
   min-height: 100vh;
 }
 .location {
-  background-color: #ffffff;
-  padding: 0.3rem;
-  margin-bottom: 0.2rem;
+  width: 100%;
+  height: 1.56rem;
+  background-color: #f5f5f5;
+  padding: 0rem 0.3rem;
   &-name {
+    position: relative;
     font-size: 0.28rem;
-    color: #333333;
-    margin-bottom: 0.08rem;
-    span {
-      margin-left: 0.2rem;
+    color: #333;
+    margin-bottom: 0.15rem;
+    img {
+      height: 0.28rem;
+      position: absolute;
+      left: -0.4rem;
+      top: 2px;
     }
   }
   &-adress {
-    width: 5rem;
     font-size: 0.24rem;
-    color: #999999;
+    color: #666;
   }
 }
+
 .information {
   height: 1.48rem;
   background: #ffffff;

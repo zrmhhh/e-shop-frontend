@@ -5,16 +5,9 @@
         <img src="@/assets/line2.png" alt="" />
       </div>
       <div class="location-detail">
-        <!-- <div class="location-detail_logo">
-          <img src="@/assets/location.png" alt="" />
-        </div> -->
         <div class="location-detail_text">
           <div class="location-detail_text--name">
-            <!-- <div style="display: inline-block;">
-              <img src="@/assets/location.png" alt="" />
-            </div> -->
             <img src="@/assets/location.png" alt="" />
-           
             <span>周果果 15000822612</span>
           </div>
           <p class="location-detail_text--adress">
@@ -79,14 +72,18 @@
       </div>
       <ul class="coupon-item">
         <li class="coupon-item_notchecked">
+          <input type="radio" name="choice" id="" />
           <p>满999减100</p>
           <span>2022/6/30-2022/7/31</span>
         </li>
         <li class="coupon-item_checked">
+          <input type="radio" name="choice" id="" />
+          <!-- <input type="radio" name="" id=""> -->
           <p>满999减100</p>
           <span>2022/6/30-2022/7/31</span>
         </li>
         <li class="coupon-item_notchecked">
+          <input type="radio" name="choice" id="" />
           <p>满999减100</p>
           <span>2022/6/30-2022/7/31</span>
         </li>
@@ -227,6 +224,9 @@ export default defineComponent({
     }
     &_checked {
       margin-bottom: 0.4rem;
+      input {
+        margin-right: 0.2rem;
+      }
       p {
         display: inline-block;
         font-size: 0.28rem;
@@ -241,6 +241,9 @@ export default defineComponent({
     }
     &_notchecked {
       margin-bottom: 0.4rem;
+      input {
+        margin-right: 0.2rem;
+      }
       p {
         display: inline-block;
         font-size: 0.28rem;

@@ -67,14 +67,17 @@
       </div>
       <ul class="coupon-item">
         <li class="coupon-item_notchecked">
+          <input type="radio" name="choice" id="" />
           <p>满999减100</p>
           <span>2022/6/30-2022/7/31</span>
         </li>
         <li class="coupon-item_checked">
+          <input type="radio" name="choice" id="" />
           <p>满999减100</p>
           <span>2022/6/30-2022/7/31</span>
         </li>
         <li class="coupon-item_notchecked">
+          <input type="radio" name="choice" id="" />
           <p>满999减100</p>
           <span>2022/6/30-2022/7/31</span>
         </li>
@@ -128,7 +131,10 @@ export default defineComponent({
       font-size: 0.28rem;
       color: #157658;
       img {
+        position: absolute;
         height: 0.28rem;
+        top: 0.3rem;
+        left: 0.9rem;
       }
     }
   }
@@ -211,6 +217,9 @@ export default defineComponent({
     }
     &_checked {
       margin-bottom: 0.4rem;
+      input {
+        margin-right: 0.2rem;
+      }
       p {
         display: inline-block;
         font-size: 0.28rem;
@@ -225,6 +234,9 @@ export default defineComponent({
     }
     &_notchecked {
       margin-bottom: 0.4rem;
+      input {
+        margin-right: 0.2rem;
+      }
       p {
         display: inline-block;
         font-size: 0.28rem;
