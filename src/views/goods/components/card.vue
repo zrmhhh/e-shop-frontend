@@ -1,7 +1,7 @@
 <template>
   <div class="warp" @click="$emit('onHideCard')">
     <div class="card" @click.stop="">
-      <div class="concent">
+      <div class="content">
         <div class="content-top">
           <div class="content-top_img">
             <img src="" alt="" />
@@ -11,9 +11,9 @@
             <p class="content-top_text--stock">库存: 1381件</p>
           </div>
         </div>
-        <div class="concent-item">
+        <div class="content-item">
           <p>颜色</p>
-          <ul class="concent-item_color">
+          <ul class="content-item_color">
             <li>黑色</li>
             <li>白色</li>
             <li>墨绿色</li>
@@ -77,14 +77,12 @@ export default {
     }
     &-item {
       margin-top: 0.4rem;
+      p {
+        color: red;
+        font-size: 0.24rem;
+      }
       &_color {
-        p {
-          color: #555555;
-          font-size: 0.24rem;
-        }
-        &_color{
-          float: left;
-        }
+        
       }
     }
   }
