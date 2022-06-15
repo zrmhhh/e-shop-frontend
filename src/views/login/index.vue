@@ -30,10 +30,10 @@ export default defineComponent({
  methods:{
   onLogin(){
     AccountLogin({
-      name:this.name,
-      passwodr:this.password
+      username: this.name,
+      password: this.password
     }).then((res) => {
-      this.$router.push("/login");
+      this.$router.push("/user");
     });
    },
   },
