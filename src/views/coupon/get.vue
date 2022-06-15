@@ -96,7 +96,7 @@ export default defineComponent({
   padding: 0.3rem;
 }
 .coupon-item {
-  background-image: url("~@/assets/get2.png");
+  background-image: url("~@/assets/coupon/get2.png");
   height: 2.32rem;
   margin-bottom: 0.2rem;
   position: relative;
