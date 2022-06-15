@@ -50,6 +50,16 @@
         <p class="goods-subtitle">简约北欧风，单色立式台灯搭配性冷淡风格</p>
       </div>
     </div>
+    <div class="goods-item" @click="$router.push('goods')">
+      <p class="goods-img">
+        <img src="http://121.4.102.246:7001/e-shop/goods/goods-01.jpg" alt="" />
+      </p>
+      <div style="padding: 0.16rem">
+        <p class="goods-title">北欧简约立式台灯</p>
+        <p class="goods-pic">¥ 298</p>
+        <p class="goods-subtitle">简约北欧风，单色立式台灯搭配性冷淡风格</p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -79,14 +89,12 @@ export default defineComponent({
 .goods-item {
   box-sizing: border-box;
   float: left;
-  padding-right: 0.2rem;
   margin-bottom: 0.28rem;
   border-radius: 0.1rem;
   box-shadow: 0px 0px 3px 0px rgba(221, 221, 221, 0.5);
-
-  width: 50%;
+  width: 3.4rem;
   text-align: left;
-
+  margin-right: 0.15rem;
   background-color: #fff;
 }
 .goods-img {

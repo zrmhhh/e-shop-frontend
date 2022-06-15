@@ -9,7 +9,7 @@
       type="text"
       placeholder="请输入密码"
     />
-    <a @click="$router.push('/registered')">点击注册</a>
+    <a @clicl="$router.push('/registered')">点击注册</a>
     <button class="login" @click="onLogin">登录</button>
   </div>
 </template>
@@ -20,24 +20,25 @@ import { AccountLogin } from "@/api/account";
 
 export default defineComponent({
   name: "LoginView",
-  components: {},
-  data() {
+  components:{},
+  data (){
     return {
-      name: "",
-      password: "",
-    };
+     name:"",
+     password:""
+  };
+ },
+ methods:{
+  onLogin(){
+    AccountLogin({
+      name:this.name,
+      passwodr:this.password
+    }).then((res) => {
+      this.$router.push("/login");
+    });
+   },
   },
-  methods: {
-    onLogin() {
-      AccountLogin({
-        username: this.name,
-        password: this.password,
-      }).then((res) => {
-        this.$router.push("/user");
-      });
-    },
-  },
-});
+ });
+
 </script>
 
 <style lang="scss" scoped>
