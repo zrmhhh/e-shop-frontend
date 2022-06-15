@@ -9,7 +9,7 @@
       type="text"
       placeholder="请输入密码"
     />
-    <a @clicl="$router.push('/registered')">点击注册</a>
+    <!-- <a @clicl="$router.push('/registered')">点击注册</a> -->
     <button class="login" @click="onLogin">登录</button>
   </div>
 </template>
