@@ -15,8 +15,10 @@
     <!-- 优惠券 -->
     <div class="coupon">
       <div class="coupon-inner">
-        <p>满999减100元券</p>
-        <p>满1699减200元券</p>
+        <div style="float: left;">
+          <p>满999减100元券</p>
+          <p>满1699减200元券</p>
+        </div>
         <span>立即领取</span>
       </div>
     </div>
@@ -124,10 +126,10 @@ export default {
       background-color: #dcebe6;
       margin-right: 0.2rem;
       text-align: center;
-      position: absolute;
-      float: none;
-      top: 50%;
-      margin-top: -0.24rem;
+      // position: absolute;
+      // float: none;
+      // top: 50%;
+      // margin-top: -0.24rem;
     }
     span {
       font-size: 0.24rem;
