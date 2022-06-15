@@ -7,7 +7,7 @@
             <img src="" alt="" />
           </div>
           <div class="content-top_text">
-            <p class="content-top_text--price">¥ 699</p>
+            <p class="content-top_text--price" style="padding-bottom: 0.28rem;">¥ 699</p>
             <p class="content-top_text--stock">库存: 1381件</p>
           </div>
         </div>
@@ -49,21 +49,21 @@ export default {
     box-sizing: border-box;
   }
   .content {
-    overflow: hidden;
+    // overflow: hidden;
     &-top {
       &_img {
         display: inline-block;
+        vertical-align: text-bottom;
         width: 1.6rem;
         height: 1.6rem;
         border: 1px solid rgb(216, 216, 216);
-        float: left;
         margin-right: 0.4rem;
       }
       &_text {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
         height: 1.6rem;
-        p {
-          padding-bottom: 0.14rem;
-        }
         &--price {
           font-size: 0.28rem;
           color: #157658;
