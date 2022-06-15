@@ -1,6 +1,6 @@
 <template>
   <div class="goods-list">
-    <div class="goods-item" @click="$router.push('goods')">
+    <div class="goods-item" @click="$router.push('goods')" v-for="(goodsItem, key) in goodsList" :key="key">
       <p class="goods-img">
         <img src="http://121.4.102.246:7001/e-shop/goods/goods-04.jpg" alt="" />
       </p>
@@ -8,56 +8,6 @@
         <p class="goods-title">海氏海诺 创口贴</p>
         <p class="goods-pic">¥ 68</p>
         <p class="goods-subtitle">产品用于浅表性小创伤等。</p>
-      </div>
-    </div>
-    <div class="goods-item" @click="$router.push('goods')">
-      <p class="goods-img">
-        <img src="http://121.4.102.246:7001/e-shop/goods/goods-01.jpg" alt="" />
-      </p>
-      <div style="padding: 0.16rem">
-        <p class="goods-title">大宝 SOD蜜</p>
-        <p class="goods-pic">¥ 88</p>
-        <p class="goods-subtitle">大宝</p>
-      </div>
-    </div>
-    <div class="goods-item" @click="$router.push('goods')">
-      <p class="goods-img">
-        <img src="http://121.4.102.246:7001/e-shop/goods/goods-05.jpg" alt="" />
-      </p>
-      <div style="padding: 0.16rem">
-        <p class="goods-title">北欧简约立式台灯</p>
-        <p class="goods-pic">¥ 298</p>
-        <p class="goods-subtitle">简约北欧风，单色立式台灯搭配性冷淡风格</p>
-      </div>
-    </div>
-    <div class="goods-item" @click="$router.push('goods')">
-      <p class="goods-img">
-        <img src="http://121.4.102.246:7001/e-shop/goods/goods-06.jpg" alt="" />
-      </p>
-      <div style="padding: 0.16rem">
-        <p class="goods-title">北欧简约立式台灯</p>
-        <p class="goods-pic">¥ 298</p>
-        <p class="goods-subtitle">简约北欧风，单色立式台灯搭配性冷淡风格</p>
-      </div>
-    </div>
-    <div class="goods-item" @click="$router.push('goods')">
-      <p class="goods-img">
-        <img src="http://121.4.102.246:7001/e-shop/goods/goods-01.jpg" alt="" />
-      </p>
-      <div style="padding: 0.16rem">
-        <p class="goods-title">北欧简约立式台灯</p>
-        <p class="goods-pic">¥ 298</p>
-        <p class="goods-subtitle">简约北欧风，单色立式台灯搭配性冷淡风格</p>
-      </div>
-    </div>
-    <div class="goods-item" @click="$router.push('goods')">
-      <p class="goods-img">
-        <img src="http://121.4.102.246:7001/e-shop/goods/goods-01.jpg" alt="" />
-      </p>
-      <div style="padding: 0.16rem">
-        <p class="goods-title">北欧简约立式台灯</p>
-        <p class="goods-pic">¥ 298</p>
-        <p class="goods-subtitle">简约北欧风，单色立式台灯搭配性冷淡风格</p>
       </div>
     </div>
   </div>
@@ -74,7 +24,7 @@ export default defineComponent({
   },
   setup(props) {
     return {
-      goodsList: [{}],
+      goodsList: [{}, {}],
     };
   },
 });
