@@ -35,7 +35,7 @@
     <!-- bottom -->
     <div class="count">
       <span class="count-selected">已选（3）</span>
-      <p class="count-btn">结算</p>
+      <p class="count-btn" @click="$router.push('/submitorder')">结算</p>
       <p class="count-price">合计 <span>¥214</span></p>
     </div>
     <TabBar />

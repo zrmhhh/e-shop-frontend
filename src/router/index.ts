@@ -18,17 +18,9 @@ const routes: Array<RouteRecordRaw> = [
     name: 'cart',
     component: () => import(/* webpackChunkName: "cart" */ '../views/cart/index.vue')
   }, {
-    path: '/newcart',
-    name: 'newcart',
-    component: () => import(/* webpackChunkName: "newcart" */ '../views/newcart/index.vue')
-  },{
     path: '/user',
     name: 'user',
     component: () => import(/* webpackChunkName: "user" */ '../views/user/index.vue')
-  },   {
-    path: '/newuser',
-    name: 'newuser',
-    component: () => import(/* webpackChunkName: "newuser" */ '../views/newuser/index.vue')
   },{
     path: '/goods',
     name: 'goods',
@@ -41,10 +33,6 @@ const routes: Array<RouteRecordRaw> = [
     path: '/coupon/get',
     name: 'couponGet',
     component: () => import(/* webpackChunkName: "get" */ '../views/coupon/get.vue')
-  },{
-    path: '/neworder',
-    name: 'neworder',
-    component: () => import(/* webpackChunkName: "neworder" */ '../views/neworder/index.vue')
   }, {
     path: '/orderdetails',
     name: 'orderdetails',

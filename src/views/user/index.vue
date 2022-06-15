@@ -59,7 +59,7 @@
           <span>全部订单</span>
           <i class="iconfont icon-ic_right" style="float: right;"></i>
         </li>
-        <li>
+        <li @click="$router.push('/coupon')">
           <i class="iconfont icon-youhuiquan"></i>
           <span>优惠券</span>
           <i class="iconfont icon-ic_right" style="float: right;"></i>
