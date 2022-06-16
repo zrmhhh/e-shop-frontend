@@ -126,10 +126,6 @@ export default {
       background-color: #dcebe6;
       margin-right: 0.2rem;
       text-align: center;
-      // position: absolute;
-      // float: none;
-      // top: 50%;
-      // margin-top: -0.24rem;
     }
     span {
       font-size: 0.24rem;
