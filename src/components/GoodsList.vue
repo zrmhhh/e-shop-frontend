@@ -15,13 +15,9 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-// import GoodsItem from "./GoodsItem.vue";
 
 export default defineComponent({
   name: "GoodsList",
-  components: {
-    // GoodsItem,
-  },
   setup(props) {
     return {
       goodsList: [{}, {}],
