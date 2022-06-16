@@ -20,25 +20,24 @@ import { AccountLogin } from "@/api/account";
 
 export default defineComponent({
   name: "LoginView",
-  components:{},
-  data (){
+  components: {},
+  data() {
     return {
-     name:"",
-     password:""
-  };
- },
- methods:{
-  onLogin(){
-    AccountLogin({
-      username: this.name,
-      password: this.password
-    }).then((res) => {
-      this.$router.push("/user");
-    });
-   },
+      name: "",
+      password: "",
+    };
   },
- });
-
+  methods: {
+    onLogin() {
+      AccountLogin({
+        username: this.name,
+        password: this.password,
+      }).then((res) => {
+        this.$router.push("/user");
+      });
+    },
+  },
+});
 </script>
 
 <style lang="scss" scoped>
