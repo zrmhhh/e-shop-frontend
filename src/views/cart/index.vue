@@ -19,12 +19,6 @@
                 <img src="@/assets/minus.png" alt="">
                 <p class="list-item_text--bottom__right---num">1</p>
                 <img src="@/assets/minus.png" alt="">
-                <!-- <div class="list-item_text--bottom__right---minus">
-                    <img src="@/assets/minus.png" alt="">
-                </div>
-                <div class="list-item_text--bottom__right---add">
-                    <img src="@/assets/add.png" alt="">
-                </div> -->
               </div>
             </div>
           </div>
@@ -35,7 +29,7 @@
           </div>
           <div class="list-item_text">
             <div class="list-item_text--top">
-              <p>北欧简约立式台灯北欧简约立式台灯</p>
+              <p>百搭短袖T恤 百搭短袖ssss</p>
               <span>黑色；圆领款；M(165)</span>
             </div>
             <div class="list-item_text--bottom">
@@ -43,13 +37,9 @@
                 <p>¥298</p>
               </div>
               <div class="list-item_text--bottom__right">
-                <!-- <div class="list-item_text--bottom__right---minus">
-                    <img src="@/assets/minus.png" alt="">
-                </div> -->
+                <img src="@/assets/minus.png" alt="">
                 <p class="list-item_text--bottom__right---num">1</p>
-                <!-- <div class="list-item_text--bottom__right---add">
-                    <img src="@/assets/add.png" alt="">
-                </div> -->
+                <img src="@/assets/minus.png" alt="">
               </div>
             </div>
           </div>
@@ -60,7 +50,7 @@
           </div>
           <div class="list-item_text">
             <div class="list-item_text--top">
-              <p>百搭短袖T恤 百搭短袖T恤百搭短袖…</p>
+              <p>百搭短袖T恤 百搭短袖ssss</p>
               <span>黑色；圆领款；M(165)</span>
             </div>
             <div class="list-item_text--bottom">
@@ -68,13 +58,9 @@
                 <p>¥298</p>
               </div>
               <div class="list-item_text--bottom__right">
-                <!-- <div class="list-item_text--bottom__right---minus">
-                    <img src="@/assets/minus.png" alt="">
-                </div> -->
+                <img src="@/assets/minus.png" alt="">
                 <p class="list-item_text--bottom__right---num">1</p>
-                <!-- <div class="list-item_text--bottom__right---add">
-                    <img src="@/assets/add.png" alt="">
-                </div> -->
+                <img src="@/assets/minus.png" alt="">
               </div>
             </div>
           </div>
@@ -85,7 +71,7 @@
           </div>
           <div class="list-item_text">
             <div class="list-item_text--top">
-              <p>北欧简约立式台灯北欧简约立式台灯</p>
+              <p>百搭短袖T恤 百搭短袖ssss</p>
               <span>黑色；圆领款；M(165)</span>
             </div>
             <div class="list-item_text--bottom">
@@ -93,63 +79,9 @@
                 <p>¥298</p>
               </div>
               <div class="list-item_text--bottom__right">
-                <!-- <div class="list-item_text--bottom__right---minus">
-                    <img src="@/assets/minus.png" alt="">
-                </div> -->
+                <img src="@/assets/minus.png" alt="">
                 <p class="list-item_text--bottom__right---num">1</p>
-                <!-- <div class="list-item_text--bottom__right---add">
-                    <img src="@/assets/add.png" alt="">
-                </div> -->
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="list-item">
-          <div class="list-item_img">
-            <img src="" alt="" />
-          </div>
-          <div class="list-item_text">
-            <div class="list-item_text--top">
-              <p>百搭短袖T恤 百搭短袖T恤百搭短袖…</p>
-              <span>黑色；圆领款；M(165)</span>
-            </div>
-            <div class="list-item_text--bottom">
-              <div class="list-item_text--bottom__left">
-                <p>¥298</p>
-              </div>
-              <div class="list-item_text--bottom__right">
-                <!-- <div class="list-item_text--bottom__right---minus">
-                    <img src="@/assets/minus.png" alt="">
-                </div> -->
-                <p class="list-item_text--bottom__right---num">1</p>
-                <!-- <div class="list-item_text--bottom__right---add">
-                    <img src="@/assets/add.png" alt="">
-                </div> -->
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="list-item">
-          <div class="list-item_img">
-            <img src="" alt="" />
-          </div>
-          <div class="list-item_text">
-            <div class="list-item_text--top">
-              <p>北欧简约立式台灯北欧简约立式台灯</p>
-              <span>黑色；圆领款；M(165)</span>
-            </div>
-            <div class="list-item_text--bottom">
-              <div class="list-item_text--bottom__left">
-                <p>¥298</p>
-              </div>
-              <div class="list-item_text--bottom__right">
-                <!-- <div class="list-item_text--bottom__right---minus">
-                    <img src="@/assets/minus.png" alt="">
-                </div> -->
-                <p class="list-item_text--bottom__right---num">3</p>
-                <!-- <div class="list-item_text--bottom__right---add">
-                    <img src="@/assets/add.png" alt="">
-                </div> -->
+                <img src="@/assets/minus.png" alt="">
               </div>
             </div>
           </div>
