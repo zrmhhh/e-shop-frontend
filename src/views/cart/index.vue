@@ -115,7 +115,7 @@ export default defineComponent({
 //   z-index: 99;
   background-color: #ffffff;
   min-height: 100vh;
-  margin-top: 0.2rem;
+  // margin-top: 0.2rem;
   .list {
     &-item {
       padding: 0.3rem;
