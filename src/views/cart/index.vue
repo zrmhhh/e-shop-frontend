@@ -8,7 +8,7 @@
           </div>
           <div class="list-item_text">
             <div class="list-item_text--top">
-              <p>百搭短袖T恤 百搭短袖T恤百搭短袖…</p>
+              <p>百搭短袖T恤 百搭短袖ssss</p>
               <span>黑色；圆领款；M(165)</span>
             </div>
             <div class="list-item_text--bottom">
@@ -16,11 +16,13 @@
                 <p>¥298</p>
               </div>
               <div class="list-item_text--bottom__right">
+                <img src="@/assets/minus.png" alt="">
+                <p class="list-item_text--bottom__right---num">1</p>
+                <img src="@/assets/minus.png" alt="">
                 <!-- <div class="list-item_text--bottom__right---minus">
                     <img src="@/assets/minus.png" alt="">
-                </div> -->
-                <p class="list-item_text--bottom__right---num">1</p>
-                <!-- <div class="list-item_text--bottom__right---add">
+                </div>
+                <div class="list-item_text--bottom__right---add">
                     <img src="@/assets/add.png" alt="">
                 </div> -->
               </div>
@@ -189,22 +191,32 @@ export default defineComponent({
       border-bottom: 1px solid rgb(227, 227, 227);
       display: flex;
       &_img {
-        float: left;
+        // float: left;
         display: inline-block;
+        vertical-align: middle;
         width: 1.6rem;
         height: 1.6rem;
         border: 1px solid rgb(226, 226, 226);
         margin-right: 0.3rem;
+        img {
+          width: 100%;
+        }
       }
       &_text {
         flex: 1;
+        display: inline-block;
+        vertical-align: middle;
         &--top {
           text-align: left;
-          margin-bottom: 0.42rem;
+          margin-bottom: 0.3rem;
           p {
             font-size: 0.28rem;
             color: #333333;
             margin-bottom: 0.2rem;
+
+            white-space: nowrap; // 文本强制不换行；
+            text-overflow: ellipsis; // 文本溢出显示省略号；
+            overflow: hidden; // 溢出的部分隐藏；
           }
           span {
             background-color: #f3f3f3;
@@ -213,23 +225,32 @@ export default defineComponent({
           }
         }
         &--bottom {
+          overflow: hidden;
           &__left {
             float: left;
             color: #157658;
             font-size: 0.28rem;
+            height: 0.44rem;
+            line-height: 0.44rem;
           }
           &__right {
             float: right;
             overflow: hidden;
+            &---num {
+              display: inline-block;
+              background-color: #dcebe6;
+              padding: 0.06rem 0.26rem;
+              vertical-align: middle;
+            }
+            img {
+              width: 0.32rem;
+              vertical-align: middle;
+            }
             // &---minus {
             //   left: -0.24rem;
             //   bottom: -0.35rem;
             //   position: relative;
             // }
-            &---num {
-              background-color: #dcebe6;
-              padding: 0.06rem 0.26rem;
-            }
             // &---add {
             //   right: -0.84rem;
             //   bottom: 0.35rem;
