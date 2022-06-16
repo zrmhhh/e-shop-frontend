@@ -2,27 +2,34 @@
   <div class="goods-list">
     <div class="goods-item" @click="$router.push('goods')" v-for="(goodsItem, key) in goodsList" :key="key">
       <p class="goods-img">
-        <img src="http://121.4.102.246:7001/e-shop/goods/goods-04.jpg" alt="" />
+        <img :src="goodsItem.image" alt="" />
       </p>
       <div style="padding: 0.16rem">
-        <p class="goods-title">海氏海诺 创口贴</p>
-        <p class="goods-pic">¥ 68</p>
-        <p class="goods-subtitle">产品用于浅表性小创伤等。</p>
+        <p class="goods-title">{{ goodsItem.name }}</p>
+        <p class="goods-pic">¥ {{ goodsItem.price }}</p>
+        <p class="goods-subtitle">{{ goodsItem.description }}</p>
       </div>
     </div>
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent } from "vue";
+import { QueryProductList } from "@/api/product";
 
 export default defineComponent({
   name: "GoodsList",
-  setup(props) {
+  data() {
     return {
-      goodsList: [{}, {}],
+      goodsList: []
     };
   },
+  created(){
+    QueryProductList({}).then(res => {
+      console.log('---------->', res)
+      this.goodsList = res.productList
+    })
+  }
 });
 </script>
 
