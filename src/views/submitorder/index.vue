@@ -1,5 +1,6 @@
 <template>
   <div class="submitoreder">
+    <!-- choose -->
     <div class="choose">
       <div class="choose-line">
         <img src="@/assets/line2.png" alt="" />
@@ -11,6 +12,24 @@
         </p>
       </div>
     </div>
+    <!-- location -->
+    <div class="location">
+      <div class="location-line">
+        <img src="@/assets/line2.png" alt="" />
+      </div>
+      <div class="location-detail">
+        <div class="location-detail_text">
+          <div class="location-detail_text--name">
+            <img src="@/assets/location.png" alt="" />
+            <span>周果果 15000822612</span>
+          </div>
+          <p class="location-detail_text--adress">
+            上海市 浦东新区 桃浦镇山东路168号高新小区3幢702室
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- content -->
     <div class="content">
       <ul class="list">
         <li class="list-item">
@@ -135,6 +154,43 @@ export default defineComponent({
         height: 0.28rem;
         top: 0.3rem;
         left: 0.9rem;
+      }
+    }
+  }
+}
+
+.location {
+  width: 100%;
+  height: 1.76rem;
+  background-color: #f6fbf9;
+  position: relative;
+  &-line {
+    width: 100%;
+    img {
+      position: absolute;
+      bottom: 0rem;
+    }
+  }
+  &-detail {
+    padding: 0rem 0.3rem;
+    &_text {
+      margin-left: 0.44rem;
+      padding-top: 0.44rem;
+      &--name {
+        position: relative;
+        font-size: 0.28rem;
+        color: #333;
+        margin-bottom: 0.15rem;
+        img {
+          height: 0.28rem;
+          position: absolute;
+          left: -0.4rem;
+          top: 2px;
+        }
+      }
+      &--adress {
+        font-size: 0.24rem;
+        color: #666;
       }
     }
   }
