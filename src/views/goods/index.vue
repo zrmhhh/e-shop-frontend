@@ -1,7 +1,7 @@
 <template>
   <div>
-    <p class="carousel">
-      <img src="@/assets/banner2.png" alt="" style="height: 6.8rem" />
+    <p class="carousel" @click="$router.push('/coupon')">
+      <img  src="@/assets/banner2.png" alt="" style="height: 6.8rem" />
     </p>
     <div class="info">
       <div class="info-inner">

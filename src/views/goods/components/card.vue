@@ -48,8 +48,14 @@
         </div>
       </div>
       <div class="bottom">
-        <p class="bottom__cart" @click="isShowCard = true">加入购物车</p>
-        <p class="bottom__buy" @click="isShowCard = true">立即购买</p>
+        <p
+          class="bottom__cart"
+         @click="$router.push('/cart')"
+        
+        >
+          加入购物车
+        </p>
+        <p class="bottom__buy"  @click="$router.push('/submitorder')"  >立即购买</p>
       </div>
     </div>
   </div>
@@ -172,7 +178,7 @@ export default {
           vertical-align: middle;
           font-size: 0.4rem;
         }
-         &-add {
+        &-add {
           position: relative;
           right: -0rem;
           vertical-align: middle;

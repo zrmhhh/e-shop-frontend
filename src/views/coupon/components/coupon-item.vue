@@ -1,5 +1,5 @@
 <template>
-  <li class="coupon-item">
+  <li class="coupon-item" @click="$router.push('/')">
     <div class="coupon-item_introduce">
       <span class="coupon-item_introduce--money">¥ 100</span>
       <span class="coupon-item_introduce--reduce">满999减100</span>
