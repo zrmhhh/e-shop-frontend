@@ -2,7 +2,7 @@
   <div class="goods-list">
     <div class="goods-item" @click="$router.push('/goods')" v-for="(goodsItem, key) in goodsList" :key="key">
       <p class="goods-img">
-        <img :src="goodsItem.image" alt="" />
+        <img :src="VUE_APP_IMAGE_HOST + '/' + goodsItem.image" alt="" />
       </p>
       <div style="padding: 0.16rem">
         <p class="goods-title">{{ goodsItem.name }}</p>
@@ -16,11 +16,13 @@
 <script>
 import { defineComponent } from "vue";
 import { QueryProductList } from "@/api/product";
+import { VUE_APP_IMAGE_HOST } from "@/libs/constant"
 
 export default defineComponent({
   name: "GoodsList",
   data() {
     return {
+      VUE_APP_IMAGE_HOST,
       goodsList: []
     };
   },
