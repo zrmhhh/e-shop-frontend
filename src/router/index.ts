@@ -33,10 +33,6 @@ const routes: Array<RouteRecordRaw> = [
     path: '/coupon/get',
     name: 'couponGet',
     component: () => import(/* webpackChunkName: "get" */ '../views/coupon/get.vue')
-  }, {
-    path: '/orderdetails',
-    name: 'orderdetails',
-    component: () => import(/* webpackChunkName: "orderdetails" */ '../views/orderdetails/index.vue')
   },{
     path: '/submitorder',
     name: 'submitorder',
@@ -51,6 +47,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/user/order',
     name: 'user-order',
     component: () => import(/* webpackChunkName: "user-order" */ '../views/user/order/index.vue')
+  }, {
+    path: '/user/order/detail',
+    name: 'orderdetail',
+    component: () => import(/* webpackChunkName: "orderdetail" */ '../views/user/order/detail/index.vue')
   }
 ]
 
