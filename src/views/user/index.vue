@@ -5,7 +5,7 @@
         <div class="card-inner">
           <div class="card-inner-top">
             <p class="avatar">
-              <img src="@/assets/avatar.jpg" alt="">
+              <img src="@/assets/avatar.jpg" alt="" />
             </p>
             <p class="name">巴木旦</p>
           </div>
@@ -29,22 +29,22 @@
         <div class="order-inner">
           <p class="order-inner__title">我的订单</p>
           <ul>
-            <li @click="$router.push('/')">
+            <li @click="$router.push('/user/order')">
               <i class="iconfont icon-daizhifu"></i>
               <br />
               <span>待支付</span>
             </li>
-            <li @click="$router.push('/')">
+            <li @click="$router.push('/user/order')">
               <i class="iconfont icon-daifahuo"></i>
               <br />
               <span>待发货</span>
             </li>
-            <li>
+            <li @click="$router.push('/user/order')">
               <i class="iconfont icon-daishouhuo"></i>
               <br />
               <span>待收货</span>
             </li>
-            <li>
+            <li @click="$router.push('/user/order')">
               <i class="iconfont icon-daishouhuo"></i>
               <br />
               <span>已完成</span>
@@ -57,17 +57,17 @@
         <li @click="$router.push('/user/order')">
           <i class="iconfont icon-quanbudingdan"></i>
           <span>全部订单</span>
-          <i class="iconfont icon-ic_right" style="float: right;"></i>
+          <i class="iconfont icon-ic_right" style="float: right"></i>
         </li>
         <li @click="$router.push('/coupon')">
           <i class="iconfont icon-youhuiquan"></i>
           <span>优惠券</span>
-          <i class="iconfont icon-ic_right" style="float: right;"></i>
+          <i class="iconfont icon-ic_right" style="float: right"></i>
         </li>
-        <li>
+        <li @click="$router.push('/address')">
           <i class="iconfont icon-shouhuodizhi"></i>
-          <span @click="$router.push('/address')">收货地址</span>
-          <i class="iconfont icon-ic_right" style="float: right;"></i>
+          <span>收货地址</span>
+          <i class="iconfont icon-ic_right" style="float: right"></i>
         </li>
       </ul>
     </div>

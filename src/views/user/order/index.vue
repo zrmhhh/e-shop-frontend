@@ -9,7 +9,7 @@
     </ul>
     <div class="content">
       <ul class="list">
-        <li class="list-item">
+        <li class="list-item" @click="$router.push('/user/order/detail')">
           <div class="list-item_top">
             <p class="list-item_top--num">
               <span>订单编号</span>

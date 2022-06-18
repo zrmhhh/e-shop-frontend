@@ -8,7 +8,7 @@
         <img src="@/assets/Sale.png" alt="" style="width: 100%" />
       </div>
       <div class="get-coupon">
-        <img @click="$router.push('/coupon')" src="@/assets/getcoupon.png" alt="" style="width: 100%" />
+        <img @click="$router.push('/coupon/get')" src="@/assets/getcoupon.png" alt="" style="width: 100%" />
       </div>
       <p class="recommend">- 热门推荐 -</p>
       <div>
