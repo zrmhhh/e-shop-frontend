@@ -42,10 +42,6 @@ const routes: Array<RouteRecordRaw> = [
     name: 'submitorder',
     component: () => import(/* webpackChunkName: "submitorder" */ '../views/submitorder/index.vue')
   },{
-    path: '/resubmitorder',
-    name: 'resubmitorder',
-    component: () => import(/* webpackChunkName: "resubmitorder" */ '../views/resubmitorder/index.vue')
-  },{
     path: '/payment',
     name: 'payment',
     component: () => import(/* webpackChunkName: "payment" */ '../views/payment/index.vue')
