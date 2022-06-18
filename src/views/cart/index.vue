@@ -2,86 +2,23 @@
   <div>
     <div class="content">
       <ul class="list">
-        <li class="list-item">
+        <li class="list-item" v-for="(cartItem, key) in cartList" :key="key">
           <div class="list-item_img">
             <img src="" alt="" />
           </div>
           <div class="list-item_text">
             <div class="list-item_text--top">
-              <p>百搭短袖T恤 百搭短袖ssss</p>
-              <span>黑色；圆领款；M(165)</span>
+              <p>{{ cartItem.goodsName }}</p>
+              <span>{{ cartItem.goodsSpec }}</span>
             </div>
             <div class="list-item_text--bottom">
               <div class="list-item_text--bottom__left">
-                <p>¥298</p>
+                <p>{{ cartItem.goodsPrice }}</p>
               </div>
               <div class="list-item_text--bottom__right">
-                <img src="@/assets/minus.png" alt="">
-                <p class="list-item_text--bottom__right---num">1</p>
-                <img src="@/assets/add.png" alt="">
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="list-item">
-          <div class="list-item_img">
-            <img src="" alt="" />
-          </div>
-          <div class="list-item_text">
-            <div class="list-item_text--top">
-              <p>百搭短袖T恤 百搭短袖ssss</p>
-              <span>黑色；圆领款；M(165)</span>
-            </div>
-            <div class="list-item_text--bottom">
-              <div class="list-item_text--bottom__left">
-                <p>¥298</p>
-              </div>
-              <div class="list-item_text--bottom__right">
-                <img src="@/assets/minus.png" alt="">
-                <p class="list-item_text--bottom__right---num">1</p>
-                <img src="@/assets/add.png" alt="">
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="list-item">
-          <div class="list-item_img">
-            <img src="" alt="" />
-          </div>
-          <div class="list-item_text">
-            <div class="list-item_text--top">
-              <p>百搭短袖T恤 百搭短袖ssss</p>
-              <span>黑色；圆领款；M(165)</span>
-            </div>
-            <div class="list-item_text--bottom">
-              <div class="list-item_text--bottom__left">
-                <p>¥298</p>
-              </div>
-              <div class="list-item_text--bottom__right">
-                <img src="@/assets/minus.png" alt="">
-                <p class="list-item_text--bottom__right---num">1</p>
-                <img src="@/assets/add.png" alt="">
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="list-item">
-          <div class="list-item_img">
-            <img src="" alt="" />
-          </div>
-          <div class="list-item_text">
-            <div class="list-item_text--top">
-              <p>百搭短袖T恤 百搭短袖ssss</p>
-              <span>黑色；圆领款；M(165)</span>
-            </div>
-            <div class="list-item_text--bottom">
-              <div class="list-item_text--bottom__left">
-                <p>¥298</p>
-              </div>
-              <div class="list-item_text--bottom__right">
-                <img src="@/assets/minus.png" alt="">
-                <p class="list-item_text--bottom__right---num">1</p>
-                <img src="@/assets/add.png" alt="">
+                <img src="@/assets/minus.png" alt="" @click="onMinus(cartItem)" />
+                <p class="list-item_text--bottom__right---num">{{ cartItem.count }}</p>
+                <img src="@/assets/add.png" alt="" @click="onAdd(cartItem)" />
               </div>
             </div>
           </div>
@@ -90,15 +27,15 @@
     </div>
     <!-- bottom -->
     <div class="count">
-      <span class="count-selected">已选（3）</span>
-      <p class="count-btn" @click="$router.push('/submitorder')" >结算 (5)</p>
-      <p class="count-price">合计 <span>¥214</span></p>
+      <!-- <span class="count-selected">已选（3）</span> -->
+      <p class="count-btn" @click="$router.push('/submitorder')">结算 ({{ cartList.length }})</p>
+      <p class="count-price">合计 <span>¥{{ computePrice() }}</span></p>
     </div>
     <TabBar />
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent } from "vue";
 import TabBar from "@/components/TabBar.vue"; // @ is an alias to /src
 
@@ -107,12 +44,52 @@ export default defineComponent({
   components: {
     TabBar,
   },
+  data() {
+    return {
+      cartList: [
+        {
+          goodsName: "百搭短袖T恤 ssss",
+          goodsSpec: "asdf",
+          goodsPrice: "298",
+          count: 1
+        },{
+          goodsName: "百搭短袖T恤 ssss",
+          goodsSpec: "asdf",
+          goodsPrice: "298",
+          count: 1
+        },{
+          goodsName: "百搭短袖T恤 ssss",
+          goodsSpec: "asdf",
+          goodsPrice: "298",
+          count: 1
+        },
+      ],
+    };
+  },
+  methods: {
+    onMinus(item) {
+      console.log(item);
+      item.count --
+    },
+    onAdd(item) {
+      console.log(item);
+      item.count ++
+    },
+    // 计算合计
+    computePrice(){
+      let totalPrice = 0
+      this.cartList.forEach(item => {
+        totalPrice += (item.count * item.goodsPrice)
+      })
+      return totalPrice
+    }
+  },
 });
 </script>
 
 <style lang="scss" scoped>
 .content {
-//   z-index: 99;
+  //   z-index: 99;
   background-color: #ffffff;
   min-height: 100vh;
   // margin-top: 0.2rem;
