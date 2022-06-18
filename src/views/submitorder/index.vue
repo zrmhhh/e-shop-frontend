@@ -1,7 +1,7 @@
 <template>
   <div class="submitoreder">
     <!-- choose -->
-    <div class="choose">
+    <div class="choose" @click="isShowLocation=true" v-if="!isShowLocation">
       <div class="choose-line">
         <img src="@/assets/line2.png" alt="" />
       </div>
@@ -13,7 +13,7 @@
       </div>
     </div>
     <!-- location -->
-    <div class="location">
+    <div class="location" v-if="isShowLocation">
       <div class="location-line">
         <img src="@/assets/line2.png" alt="" />
       </div>
@@ -105,7 +105,7 @@
     <div class="bottom">
       <p class="bottom-count">合计</p>
       <p class="bottom-price">¥1536</p>
-      <p class="bottom-submit">提交订单</p>
+      <p class="bottom-submit" @click="$router.push('/payment')">提交订单</p>
     </div>
   </div>
 </template>
@@ -115,6 +115,11 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "SubmitOrder",
+  data() {
+    return {
+      isShowLocation: false,
+    };
+  },
 });
 </script>
 

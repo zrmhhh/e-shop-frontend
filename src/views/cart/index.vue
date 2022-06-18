@@ -18,7 +18,7 @@
               <div class="list-item_text--bottom__right">
                 <img src="@/assets/minus.png" alt="">
                 <p class="list-item_text--bottom__right---num">1</p>
-                <img src="@/assets/minus.png" alt="">
+                <img src="@/assets/add.png" alt="">
               </div>
             </div>
           </div>
@@ -39,7 +39,7 @@
               <div class="list-item_text--bottom__right">
                 <img src="@/assets/minus.png" alt="">
                 <p class="list-item_text--bottom__right---num">1</p>
-                <img src="@/assets/minus.png" alt="">
+                <img src="@/assets/add.png" alt="">
               </div>
             </div>
           </div>
@@ -60,7 +60,7 @@
               <div class="list-item_text--bottom__right">
                 <img src="@/assets/minus.png" alt="">
                 <p class="list-item_text--bottom__right---num">1</p>
-                <img src="@/assets/minus.png" alt="">
+                <img src="@/assets/add.png" alt="">
               </div>
             </div>
           </div>
@@ -81,7 +81,7 @@
               <div class="list-item_text--bottom__right">
                 <img src="@/assets/minus.png" alt="">
                 <p class="list-item_text--bottom__right---num">1</p>
-                <img src="@/assets/minus.png" alt="">
+                <img src="@/assets/add.png" alt="">
               </div>
             </div>
           </div>

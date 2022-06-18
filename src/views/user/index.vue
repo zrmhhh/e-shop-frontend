@@ -12,7 +12,7 @@
           <div class="card-inner-bottom">
             <div class="card-inner-bottom__item">
               <p class="highlight">3</p>
-              <p class="description">优惠券</p>
+              <p class="description" @click="$router.push('/coupon')">优惠券</p>
             </div>
             <div class="card-inner-bottom__item">
               <!-- <p class="highlight">3</p> -->
@@ -66,7 +66,7 @@
         </li>
         <li>
           <i class="iconfont icon-shouhuodizhi"></i>
-          <span>收货地址</span>
+          <span @click="$router.push('/address')">收货地址</span>
           <i class="iconfont icon-ic_right" style="float: right;"></i>
         </li>
       </ul>

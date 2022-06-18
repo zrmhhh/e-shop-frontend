@@ -13,7 +13,7 @@
       </div>
     </div>
     <!-- 优惠券 -->
-    <div class="coupon">
+    <div class="coupon" @click="$router.push('/coupon')">
       <div class="coupon-inner">
         <div style="float: left;">
           <p>满999减100元券</p>
@@ -40,11 +40,11 @@
     <!-- pay -->
     <div class="ctrl">
       <div class="ctrl-left">
-        <div class="ctrl-left__home">
+        <div class="ctrl-left__home" @click="$router.push('/')">
           <img src="@/assets/home-logo.png" alt="" />
           <p>首页</p>
         </div>
-        <div class="ctrl-left__cart">
+        <div class="ctrl-left__cart" @click="$router.push('/user/order')">
           <img src="@/assets/home-logo.png" alt="" />
           <p>购物车</p>
           <div class="ctrl-left__cart--count">
