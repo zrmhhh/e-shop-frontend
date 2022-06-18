@@ -7,6 +7,7 @@ import axios from 'axios';
 // import { Message, Notice } from 'view-design';
 
 const ApiBaseURL = '/dev-api'
+// const ApiBaseURL = 'http://121.4.102.246:3000'
 
 // 创建一个错误
 function errorCreate(msg: any) {
