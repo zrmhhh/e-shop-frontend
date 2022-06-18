@@ -2,8 +2,8 @@ import request from '@/libs/request';
 
 export function QueryProductList (data: any) {
     return request({
-        url: '/product',
-        method: 'get',
+        url: '/product/list',
+        method: 'post',
         params: data
     });
 }

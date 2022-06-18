@@ -28,8 +28,8 @@ export default defineComponent({
   },
   created(){
     QueryProductList({}).then(res => {
-      console.log('---------->', res)
-      this.goodsList = res.productList
+      // console.log('---------->', res)
+      this.goodsList = res.list
     })
   }
 });
